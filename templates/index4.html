@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAZAR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styel4.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+      <a href="#" class="logo">DAZAR</a>
+      <img src="{{ url_for('static', filename='img/test.png') }}" alt="">
+      <style>
+    
+        img {
+            width: 4%;
+            height: 60;  
+        }
+    </style>
+      </nav> 
+      <div class="navbar">
+        <a href="#" class="login-btn"  onclick="location.href='/index2'">sign in</a>
+      </div>
+      
+    
+    </header>
+
+    <section class="main">
+        <dev>
+            <h2><br><span>Virus scanner</span></h2>
+            <h3>Scan URL,IP address </h3>
+                   
+        </dev>   
+     </section class="Social" id="Social1">
+
+     <div class="button-container">
+      <button onclick="location.href='/'">FILE</button>
+      <button onclick="location.href='/index3'">URL</button>
+      <button class="button1">SEARCH</button>
+    </div>
+    <hr class="line">
+    <img class="img" src="{{ url_for('static', filename='img/Virus-scan.png') }}" alt="fail">
+
+    <form action="/upload_link" method="post">
+      <input type="text" name="url" placeholder="URL,IP address,domain,or file hash">
+      <button type="submit">Submit</button>
+    </form>
+        
+    <footer class="footer">
+      <ul class="social-icons">
+          <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+  </footer>
+    </section>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styel2.css') }}">
+</head>
+<body>
+    <form>
+<img src="{{ url_for('static', filename='img/login.png') }}" alt="user">
+<style>
+    
+    img {
+        width: 25%;
+        height: auto;  
+    }
+</style>
+    <h2>login</h2>
+    <input type="text" placeholder="user name" required>
+    <input type="password" placeholder="Enter Password" required>  
+    <input type="button" value="login" onclick="location.href='/'">
+    
+    </form>
+    
+    
+    
+</body>
+</html>

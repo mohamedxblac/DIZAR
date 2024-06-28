@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=firewall-width, initial-scale=1.0">
+    <title>SSH Connection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styel5.css') }}">
+</head>
+<body>
+    <h1>Connect to Firewall SSH</h1>
+    <form action="{{ url_for('connect_ssh') }}" method="post">
+        <label for="device_ip">Firewall IP:</label>
+        <input type="text" id="Firewall_ip" name="device_ip" required><br><br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Connect</button>
+    </form>
+</body>
+</html>
