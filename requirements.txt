@@ -1,2 +1,5 @@
-pip install virtualenv
-pip install Flask
+Flask
+pandas
+requests
+time
+netmiko
